@@ -41,7 +41,7 @@ BaseType_t xValidateSchedule(const TimelineConfig_t *pxCfg) {
 }
 
 BaseType_t vConfigureScheduler(const TimelineConfig_t *pxCfg) {
-    // Chiamo la funzione di validazione
+    // Chiamo la funzione per la validazione 
     if (xValidateSchedule(pxCfg) != pdPASS) {
         return pdFAIL; 
     }
